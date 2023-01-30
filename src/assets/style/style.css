@@ -1,0 +1,226 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    @apply font-poppins;
+}
+
+.max-width-01 {
+    @apply max-w-7xl mx-auto;
+}
+
+.padding-01 {
+    @apply px-[6%] py-[5%]
+}
+
+.text-title {
+    @apply text-colorSecondary font-semibold text-lg tracking-widest
+}
+
+.text-sub-title {
+    @apply text-colorPrimary font-bold text-4xl leading-[3rem]
+}
+
+
+/* Hero Section Style */
+    .hero-content {
+        @apply block md:flex items-center padding-01
+    }
+
+    .hero-content .hero-desc {
+        @apply basis-1 shrink grow translate-y-14
+    }
+
+    .hero-content .hero-title {
+        @apply font-rubik font-bold text-colorPrimary drop-shadow-[0_4px_2px_rgba(0,0,0,0.25)] text-5xl xl:text-6xl leading-tight md:leading-snug lg:leading-[3.5rem] xl:leading-[4rem]
+    }
+
+    .hero-content .hero-title span {
+        @apply font-lobster-two italic text-colorSecondary
+    }
+
+    .hero-content .hero-sub-title {
+        @apply font-medium text-[#333] mt-3 mb-5 text-base md:text-lg leading-7 md:leading-8 pr-0 lg:pr-[5%] xl:pr-[15%]
+    }
+
+    .hero-content .hero-btn {
+        @apply flex gap-7 flex-col lg:flex-row items-center md:items-start lg:items-center
+    }
+
+    .hero-content .hero-get-started-btn {
+        @apply font-medium text-lg bg-colorSecondary text-white py-4 rounded-full px-24 md:px-9
+    }
+
+    .hero-content .hero-watch-video-btn {
+        @apply flex font-medium text-lg items-center cursor-pointer gap-4
+    }
+
+    .hero-content .hero-watch-video-btn .play-btn {
+        @apply flex items-center justify-center text-2xl bg-colorQuaternary text-colorPrimary rounded-full w-12 h-12
+    }
+
+    .hero-content .hero-watch-video-btn span {
+        @apply text-[#333] text-lg font-medium
+    }
+
+    .hero-content .hero-img {
+        @apply relative w-full md:w-1/2 mt-24 md:mt-0 
+    }
+
+    .hero-content .hero-customers {
+        @apply flex items-center gap-5 mt-16 lg:mt-24
+    }
+
+    .hero-content .hero-img .clock-icon {
+        @apply bg-colorQuaternary text-white flex justify-center items-center -rotate-[20deg] absolute -top-5 md:-top-7 lg:-top-5 left-0 lg:-left-5 rounded-2xl w-16 h-16 md:w-[4.5rem] lg:w-[5.7rem] md:h-[4.5rem] lg:h-[5.4rem] text-4xl md:text-5xl
+    }
+
+    .hero-content .hero-img .food-courier-card {
+        @apply bg-white rounded-full shadow-2xl flex gap-2 md:gap-5 items-center absolute bottom-10 md:bottom-5 xl:bottom-14 -left-3 md:-left-14 w-52 md:w-64 lg:w-72 p-1 lg:px-4 lg:py-2
+    }
+
+    .hero-content .hero-img .food-courier-card .courier-food-img {
+        @apply bg-[#FEE9DE] rounded-full flex justify-center items-center w-10 h-10 md:w-12 md:h-12 text-2xl
+    }
+
+    .hero-content .hero-img .food-courier-card .courier-food-phone {
+        @apply bg-colorSecondary text-white rounded-full flex justify-center items-center w-10 h-10 md:w-12 md:h-12 text-2xl 
+    }
+
+    .food-recommended {
+        @apply bg-white shadow-2xl flex gap-5 items-center absolute md:bottom-24 xl:-bottom-9 -right-3 lg:-right-5 pl-4 pr-10 py-4 rounded-2xl
+    }
+/* End Hero Section Style */
+
+
+/* Services Section Style */
+    .services-content {
+        @apply padding-01 mt-72 md:mt-52 lg:mt-0
+    }
+
+    .services-content h5 {
+        @apply text-title text-center
+    }
+
+    .services-content h1 {
+        @apply text-sub-title text-center mt-5 mb-16 md:mb-10 md:px-20 lg:px-80
+    }
+
+    .services {
+        @apply flex flex-col md:flex-row items-baseline justify-center text-center gap-10 md:gap-10 lg:gap-24
+    }
+
+    .services img {
+        @apply w-full
+    }
+
+    .services h2 {
+        @apply font-bold text-2xl md:text-xl lg:text-2xl my-2
+    }
+
+    .services p {
+        @apply text-[#333] font-medium text-lg md:text-base lg:text-lg
+    }
+/* End Services Section Style */
+
+
+/* Menu Section Style */
+    .menu-content {
+        @apply padding-01
+    }
+
+    .menu-content .menu-title {
+        @apply w-full md:w-3/4 lg:w-2/5
+    }
+
+    .menu-content .menu-title h5 {
+        @apply text-title
+    }
+
+    .menu-content .menu-title h1 {
+        @apply text-sub-title
+    }
+
+    .menu-content .our-menu {
+        @apply flex flex-col md:flex-row mt-14 pl-0 xl:pl-7
+    }
+
+    .menu-content .our-menu .menu-categories {
+        @apply flex flex-row md:flex-col h-auto md:h-[20rem] lg:h-[27rem] overflow-x-scroll md:overflow-x-hidden md:overflow-y-scroll scrollbar-thin scrollbar-thumb-colorSecondary scrollbar-track-[#F2F2F2] scrollbar-w-1 scrollbar-thumb-rounded w-full md:w-1/2
+    }
+
+    .menu-content .our-menu .menu-categories li{
+        @apply mb-7 w-full lg:w-[80%]
+    }
+
+    .menu-content .our-menu .menu-categories .list-menu {
+        @apply flex flex-nowrap gap-3 md:gap-5 items-center bg-white text-black rounded-full w-auto py-2 md:py-4 pl-2 pr-0 md:pr-6
+    }
+
+    .menu-content .our-menu .menu-categories .list-menu i {
+        @apply w-8 text-lg text-center
+    }
+
+    .menu-content .our-menu .menu-categories .list-menu span {
+        @apply text-xl font-medium w-32 md:w-auto
+    }
+
+    .menu-content .our-menu .menu-categories .list-menu-active {
+        @apply bg-colorSecondary text-white mr-10 md:mr-0
+    }
+
+    .menu-content .our-menu .menu-categories .list-menu-active i {
+        @apply bg-white w-8 h-8 rounded-full flex justify-center items-center
+    }
+
+    .menu-content .our-menu .menu-categories .list-menu-active span {
+        @apply font-normal
+    }
+
+    .menu-content .our-menu .menu-food {
+        @apply w-full md:w-3/4 h-[26rem] md:h-[24rem] lg:h-[28rem] md:px-11 lg:pr-0 xl:pr-11
+    }
+
+    .menu-content .our-menu .menu-food .swiper-wrapper {
+        @apply h-[90%]
+    }
+
+    .menu-content .our-menu .menu-food .swiper-slide {
+        @apply w-[23rem] h-full
+    }
+
+    .menu-content .our-menu .menu-food .food-list {
+        @apply h-full relative
+    }
+
+    .menu-content .our-menu .menu-food .food-list img {
+        @apply w-full h-full object-cover rounded-3xl
+    }
+
+    .menu-content .our-menu .menu-food .food-list .food-text {
+        @apply absolute bottom-3 left-7 z-20
+    }
+
+    .menu-content .our-menu .menu-food .food-list .food-text h6 {
+        @apply text-white text-2xl font-medium
+    }
+
+    .menu-content .our-menu .menu-food .food-list .food-text h5 {
+        @apply text-white text-2xl font-bold my-3
+    }
+
+    .menu-content .our-menu .menu-food .food-list .food-text h5 span {
+        @apply text-lg text-colorQuaternary
+    }
+
+    .menu-content .our-menu .menu-food .food-list .food-text a {
+        @apply text-white font-medium flex gap-2
+    }
+
+    .menu-content .our-menu .menu-food .food-list::after {
+        @apply rounded-3xl w-full h-3/5 absolute bottom-0 left-0 content-[''];
+        background: linear-gradient(359.23deg, rgba(0, 0, 0, 0.7) 0.74%, rgba(0, 0, 0, 0.212344) 42.39%, rgba(0, 0, 0, 0) 99.45%);
+    }
+/* End Menu Section Style */
