@@ -1,28 +1,27 @@
 {
   "files": {
-    "main.css": "/food-landing-page/static/css/main.c83a985c.css",
-    "main.js": "/food-landing-page/static/js/main.479a96dd.js",
-    "static/media/ramen.jpg": "/food-landing-page/static/media/ramen.94b2d7a4e88a92f34a42.jpg",
-    "static/media/burger.jpg": "/food-landing-page/static/media/burger.a2f584d098f6f2cd5fc7.jpg",
-    "static/media/pizza.jpg": "/food-landing-page/static/media/pizza.2a50f812bf8220dead9a.jpg",
+    "main.css": "/food-landing-page/static/css/main.e4bf2a80.css",
+    "main.js": "/food-landing-page/static/js/main.8dc2e5e5.js",
     "static/media/remixicon.svg?t=1590207869815": "/food-landing-page/static/media/remixicon.9cedd2150922ead84869.svg",
-    "static/media/hero-img.png": "/food-landing-page/static/media/hero-img.8a2ee8cf346e55235fff.png",
     "static/media/remixicon.eot?t=1590207869815": "/food-landing-page/static/media/remixicon.5cb99e6cba5a4619063f.eot",
     "static/media/remixicon.ttf?t=1590207869815": "/food-landing-page/static/media/remixicon.f2616f597cf98f38d234.ttf",
     "static/media/remixicon.woff?t=1590207869815": "/food-landing-page/static/media/remixicon.8d09fa11700ed63cf96e.woff",
-    "static/media/cs-2.svg": "/food-landing-page/static/media/cs-2.758f6471cd29079d8ac5e61d3484c595.svg",
+    "static/media/ramen.webp": "/food-landing-page/static/media/ramen.1bdca984e552855aefd8.webp",
+    "static/media/burger.webp": "/food-landing-page/static/media/burger.f8e7d5d1a9fe0de4150c.webp",
     "static/media/remixicon.woff2?t=1590207869815": "/food-landing-page/static/media/remixicon.90668f6f9b3c2c18a090.woff2",
-    "static/media/cs-3.svg": "/food-landing-page/static/media/cs-3.85d567d2bb63e59e8d2b51b52a61dfce.svg",
-    "static/media/cs-1.svg": "/food-landing-page/static/media/cs-1.85dfbe6b18ab5e50aeea90f699725c58.svg",
+    "static/media/pizza.webp": "/food-landing-page/static/media/pizza.18bca88922ccfd6e2241.webp",
+    "static/media/hero-img.webp": "/food-landing-page/static/media/hero-img.9d7b36c7a142d7661371.webp",
+    "static/media/cs-1.svg": "/food-landing-page/static/media/cs-1.d434260e4976e179e6e0d8bba5b044cc.svg",
     "static/media/hero-pizza.png": "/food-landing-page/static/media/hero-pizza.8f322d5b032e507d9863.png",
+    "static/media/testimonial.webp": "/food-landing-page/static/media/testimonial.bde42c5ef5446a79035e.webp",
     "static/media/easy-to-order.png": "/food-landing-page/static/media/easy-to-order.6db90db09d51dd64732b.png",
     "static/media/fastest-delivery.png": "/food-landing-page/static/media/fastest-delivery.cb4fb3f9d5ef27e16c0b.png",
     "index.html": "/food-landing-page/index.html",
-    "main.c83a985c.css.map": "/food-landing-page/static/css/main.c83a985c.css.map",
-    "main.479a96dd.js.map": "/food-landing-page/static/js/main.479a96dd.js.map"
+    "main.e4bf2a80.css.map": "/food-landing-page/static/css/main.e4bf2a80.css.map",
+    "main.8dc2e5e5.js.map": "/food-landing-page/static/js/main.8dc2e5e5.js.map"
   },
   "entrypoints": [
-    "static/css/main.c83a985c.css",
-    "static/js/main.479a96dd.js"
+    "static/css/main.e4bf2a80.css",
+    "static/js/main.8dc2e5e5.js"
   ]
 }
