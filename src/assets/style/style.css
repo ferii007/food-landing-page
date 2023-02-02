@@ -109,7 +109,7 @@ body{
     }
 
     .services {
-        @apply flex flex-col md:flex-row items-baseline justify-center text-center gap-10 md:gap-10 lg:gap-24
+        @apply flex flex-col md:flex-row md:items-baseline justify-center text-center gap-10 md:gap-10 lg:gap-24
     }
 
     .services img {
