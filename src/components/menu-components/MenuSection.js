@@ -1,13 +1,14 @@
 
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
 import { Pagination } from 'swiper';
 
-import burgerImg from "./../../assets/img/food/burger.jpg";
-import pizzaImg from "./../../assets/img/food/pizza.jpg";
-import ramenImg from "./../../assets/img/food/ramen.jpg";
+import burgerImg from "./../../assets/img/food/burger.webp";
+import pizzaImg from "./../../assets/img/food/pizza.webp";
+import ramenImg from "./../../assets/img/food/ramen.webp";
 
 const MenuSection = () => {
 
@@ -111,7 +112,7 @@ const MenuSection = () => {
                         >
                             <SwiperSlide>
                                 <div className='food-list'>
-                                    <img src={burgerImg} alt="Burger Pict" />
+                                    <LazyLoadImage effect="black-and-white" src={burgerImg} alt="Burger Pict" />
 
                                     <div className='food-text'>
                                         <h6>Burger</h6>
@@ -126,7 +127,7 @@ const MenuSection = () => {
 
                             <SwiperSlide>
                                 <div className='food-list'>
-                                    <img src={ramenImg} alt="Burger Pict" />
+                                    <LazyLoadImage effect="black-and-white" src={ramenImg} alt="Burger Pict" />
 
                                     <div className='food-text'>
                                         <h6>Ramen</h6>
@@ -141,7 +142,7 @@ const MenuSection = () => {
 
                             <SwiperSlide>
                                 <div className='food-list'>
-                                    <img src={pizzaImg} alt="Pizza Pict" />
+                                    <LazyLoadImage effect="black-and-white" src={pizzaImg} alt="Pizza Pict" />
 
                                     <div className='food-text'>
                                         <h6>Pizza</h6>

@@ -70,7 +70,7 @@ body{
     }
 
     .hero-content .hero-customers {
-        @apply flex items-center gap-5 mt-16 lg:mt-24
+        @apply flex items-center gap-5 py-16 md:mt-16 md:py-0 lg:mt-24
     }
 
     .hero-content .hero-img .clock-icon {
@@ -97,7 +97,7 @@ body{
 
 /* Services Section Style */
     .services-content {
-        @apply padding-01 mt-72 md:mt-52 lg:mt-0
+        @apply padding-01 mt-64 md:mt-24 lg:mt-0
     }
 
     .services-content h5 {
@@ -128,7 +128,7 @@ body{
 
 /* Menu Section Style */
     .menu-content {
-        @apply padding-01
+        @apply padding-01 mt-32 md:mt-14 lg:mt-0
     }
 
     .menu-content .menu-title {
@@ -148,7 +148,7 @@ body{
     }
 
     .menu-content .our-menu .menu-categories {
-        @apply flex flex-row md:flex-col h-auto md:h-[20rem] lg:h-[27rem] overflow-x-scroll md:overflow-x-hidden md:overflow-y-scroll scrollbar-thin scrollbar-thumb-colorSecondary scrollbar-track-[#F2F2F2] scrollbar-w-1 scrollbar-thumb-rounded w-full md:w-1/2
+        @apply flex flex-row md:flex-col h-auto md:h-[20rem] lg:h-[27rem] overflow-x-scroll md:overflow-x-hidden md:overflow-y-scroll scrollbar-thin scrollbar-thumb-colorSecondary scrollbar-track-[#F2F2F2] scrollbar-w-1 scrollbar-thumb-rounded w-full md:w-1/2 mb-8 md:mb-0
     }
 
     .menu-content .our-menu .menu-categories li{
@@ -195,6 +195,10 @@ body{
         @apply h-full relative
     }
 
+    .menu-content .our-menu .menu-food .food-list .lazy-load-image-background {
+        @apply w-full h-full object-cover rounded-3xl
+    }
+
     .menu-content .our-menu .menu-food .food-list img {
         @apply w-full h-full object-cover rounded-3xl
     }
@@ -224,3 +228,66 @@ body{
         background: linear-gradient(359.23deg, rgba(0, 0, 0, 0.7) 0.74%, rgba(0, 0, 0, 0.212344) 42.39%, rgba(0, 0, 0, 0) 99.45%);
     }
 /* End Menu Section Style */
+
+
+/* Testimonial Section Style */
+    .testimonial-content {
+        @apply padding-01 flex flex-col lg:flex-row items-center px-7 md:px-0 mt-32 md:mt-14 lg:mt-0
+    }
+
+    .testimonial-content .testimonial-reviewers {
+        @apply w-full md:w-auto bg-white rounded-2xl px-5 py-4 absolute -bottom-24 lg:-bottom-10 md:right-1/2 md:translate-x-1/2 lg:translate-x-0 lg:right-0 xl:right-10 shadow-xl
+    }
+
+    .testimonial-content .testimonial-reviewers p {
+        @apply font-bold text-base md:text-lg text-center pb-2
+    }
+
+    .testimonial-content .testimonial-reviewers .reviewers-img {
+        @apply flex justify-center
+    }
+
+    .testimonial-content .testimonial-reviewers .reviewers-img img {
+        @apply w-12 md:w-14 lg:w-auto
+    }
+
+    .testimonial-content .testimonial-desc {
+        @apply basis-1 shrink grow flex flex-col gap-3 px-0 md:px-20 pt-40 lg:pt-0
+    }
+
+    .testimonial-content .testimonial-desc h5 {
+        @apply text-title
+    }
+
+    .testimonial-content .testimonial-desc h1 {
+        @apply text-sub-title md:pr-36 lg:pr-0
+    }
+
+    .testimonial-content .testimonial-desc p {
+        @apply text-[#333] font-medium leading-8
+    }
+
+    .testimonial-content .testimonial-desc .testimonial-review {
+        @apply flex flex-col gap-4
+    }
+
+    .testimonial-content .testimonial-desc .testimonial-review .reviewer-info {
+        @apply flex items-center gap-3
+    }
+
+    .testimonial-content .testimonial-desc .testimonial-review .reviewer-info p {
+        @apply font-medium text-lg
+    }
+
+    .testimonial-content .testimonial-desc .testimonial-review .reviewer-info span {
+        @apply font-medium text-sm text-[#828282]
+    }
+
+    .testimonial-content .testimonial-desc .testimonial-review .reviewer-score {
+        @apply flex gap-1 items-center
+    }
+
+    .testimonial-content .testimonial-desc .testimonial-review .reviewer-score span {
+        @apply font-medium
+    }
+/* End Testimonial Section Style */

@@ -1,8 +1,8 @@
 
-import heroImg from './../../assets/img/hero-img/hero-img.png';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
+import heroImg from './../../assets/img/hero-img/hero-img.webp';
 import customer1 from './../../assets/img/hero-img/cs-1.svg';
-import customer2 from './../../assets/img/hero-img/cs-2.svg';
-import customer3 from './../../assets/img/hero-img/cs-3.svg';
 import heroPizza from'./../../assets/img/hero-img/hero-pizza.png';
 
 const HeroSection = () => {
@@ -36,8 +36,8 @@ const HeroSection = () => {
                     <div className='hero-customers'>
                         <div className='flex'>
                             <img src={customer1} alt="Customer" />
-                            <img src={customer2} alt="Customer" className='-ml-5' />
-                            <img src={customer3} alt="Customer" className='-ml-5' />
+                            <img src={customer1} alt="Customer" className='-ml-5' />
+                            <img src={customer1} alt="Customer" className='-ml-5' />
                         </div>
 
                         <div>
@@ -54,7 +54,7 @@ const HeroSection = () => {
                 </div>
 
                 <div className="hero-img">
-                    <img src={heroImg} alt="Food" className='w-full' />
+                    <LazyLoadImage effect="black-and-white" src={heroImg} alt="Food" className='w-full' />
 
                     <div className='clock-icon'>
                         <i className="ri-time-line"></i>
@@ -71,7 +71,7 @@ const HeroSection = () => {
                         </div>
 
                         <div className='courier-food-phone'>
-                            <i class="ri-phone-line"></i>
+                            <i className="ri-phone-line"></i>
                         </div>
                     </div>
 
