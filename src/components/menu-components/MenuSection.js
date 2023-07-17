@@ -3,14 +3,35 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import {menus} from '../../data/menus'
+import { useState, useEffect } from 'react';
 
 import { Pagination } from 'swiper';
 
-import burgerImg from "./../../assets/img/food/burger.webp";
-import pizzaImg from "./../../assets/img/food/pizza.webp";
-import ramenImg from "./../../assets/img/food/ramen.webp";
 
 const MenuSection = () => {
+    const [activeMenu, setActiveMenu] = useState(null);
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        getProductMenu(0, 'burgers')
+    }, [])
+
+    const getProductMenu = async (index, menuName) => {
+        setActiveMenu(index);
+
+        const response = await fetch(`https://tiny-blue-vulture-shoe.cyclic.app/${menuName}?_page=1&_limit=3`);
+        const productsResponse = await response.json();
+        setProducts(productsResponse)
+
+
+        // fetch(`https://tiny-blue-vulture-shoe.cyclic.app/${menuName}?_page=1&_limit=3`)
+        // .then((response) => response.json())
+        // .then((data) => {
+        //     console.log(data)
+        //     // setProducts(data)
+        // });
+    }
 
     return(
         <section className="max-width-01">
@@ -23,77 +44,14 @@ const MenuSection = () => {
 
                 <div className="our-menu">
                     <ul className="menu-categories">
-                        <li>
-                            <a href="#" className="list-menu">
-                                <i>🍔</i>
-                                <span>Burger</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" className="list-menu list-menu-active">
-                                <i>🍕</i>
-                                <span>Pizza</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" className="list-menu">
-                                <i>🧁</i>
-                                <span>Cupcake</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" className="list-menu">
-                                <i>🍜</i>
-                                <span>Ramen</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" className="list-menu">
-                                <i>🍨</i>
-                                <span>Ice Cream</span>
-                            </a>
-                        </li>
-
-
-
-                        <li>
-                            <a href="#" className="list-menu">
-                                <i>🍔</i>
-                                <span>Burger</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" className="list-menu">
-                                <i>🍕</i>
-                                <span>Pizza</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" className="list-menu">
-                                <i>🧁</i>
-                                <span>Cupcake</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" className="list-menu">
-                                <i>🍜</i>
-                                <span>Ramen</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" className="list-menu">
-                                <i>🍨</i>
-                                <span>Ice Cream</span>
-                            </a>
-                        </li>
+                        {menus.map((menu, index) => (
+                            <li key={index}>
+                                <p href="#" className={`list-menu ${index === activeMenu ? 'list-menu-active' : ''}`} onClick={() => getProductMenu(index, menu.param)}>
+                                    <i>{menu.icon}</i>
+                                    <span>{menu.name}</span>
+                                </p>
+                            </li>
+                        ))}
                     </ul>
 
                     <div className="menu-food">
@@ -110,50 +68,25 @@ const MenuSection = () => {
                              }}
                             className="mySwiper h-full"
                         >
-                            <SwiperSlide>
-                                <div className='food-list'>
-                                    <LazyLoadImage effect="black-and-white" src={burgerImg} alt="Burger Pict" />
+                            {products.map((product, index) => (
+                                <SwiperSlide key={index}>
+                                    <div className='food-list'>
+                                        <LazyLoadImage effect="black-and-white" src={product.img} alt={product.dsc} />
 
-                                    <div className='food-text'>
-                                        <h6>Burger</h6>
-                                        <h5><span>$</span>6.49</h5>
-                                        <a href='#'>
-                                            Order Now
-                                            <i className="ri-arrow-right-s-line text-xl"></i>
-                                        </a>
+                                        <div className='food-text'>
+                                            <h6>{product.name}</h6>
+                                            <h5><span>$</span>{product.price}</h5>
+                                            <a href='#'  onClick={(e) => {
+                                                e.preventDefault();
+                                                alert('This feature not added yet')
+                                            }}>
+                                                Order Now
+                                                <i className="ri-arrow-right-s-line text-xl"></i>
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                            </SwiperSlide>
-
-                            <SwiperSlide>
-                                <div className='food-list'>
-                                    <LazyLoadImage effect="black-and-white" src={ramenImg} alt="Burger Pict" />
-
-                                    <div className='food-text'>
-                                        <h6>Ramen</h6>
-                                        <h5><span>$</span>5.49</h5>
-                                        <a href='#'>
-                                            Order Now
-                                            <i className="ri-arrow-right-s-line text-xl"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-
-                            <SwiperSlide>
-                                <div className='food-list'>
-                                    <LazyLoadImage effect="black-and-white" src={pizzaImg} alt="Pizza Pict" />
-
-                                    <div className='food-text'>
-                                        <h6>Pizza</h6>
-                                        <h5><span>$</span>7.49</h5>
-                                        <a href='#'>
-                                            Order Now
-                                            <i className="ri-arrow-right-s-line text-xl"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
+                                </SwiperSlide>
+                            ))}
                         </Swiper>
                     </div>
                 </div>
