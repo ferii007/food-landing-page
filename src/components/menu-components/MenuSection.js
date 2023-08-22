@@ -3,10 +3,11 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import {menus} from '../../data/menus'
 import { useState, useEffect } from 'react';
 
-import { Pagination, Mousewheel } from 'swiper';
+import { Pagination, Navigation } from 'swiper';
 
 
 const MenuSection = () => {
@@ -27,7 +28,7 @@ const MenuSection = () => {
 
     return(
         <section className="max-width-01">
-            <div className="menu-content">
+            <div className="menu-content relative">
                 <div className="menu-title">
                     <h5>OUR MENU</h5>
 
@@ -49,8 +50,8 @@ const MenuSection = () => {
                     <div className="menu-food">
                         <Swiper
                             pagination={{ clickable: true }}
-                            mousewheel={true}
-                            modules={[Pagination, Mousewheel]}
+                            navigation={true} 
+                            modules={[Pagination, Navigation]}
                             slidesPerView={1}
                             spaceBetween={30}
                             breakpoints={{ 
