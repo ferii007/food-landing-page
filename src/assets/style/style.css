@@ -50,7 +50,7 @@ body{
     }
 
     .hero-content .hero-get-started-btn {
-        @apply font-medium text-lg bg-colorSecondary text-white py-4 rounded-full px-24 md:px-9
+        @apply cursor-pointer font-medium text-lg bg-colorSecondary text-white py-4 rounded-full px-24 md:px-9
     }
 
     .hero-content .hero-watch-video-btn {
@@ -219,7 +219,7 @@ body{
         @apply text-lg text-colorQuaternary
     }
 
-    .menu-content .our-menu .menu-food .food-list .food-text a {
+    .menu-content .our-menu .menu-food .food-list .food-text .order-btn {
         @apply text-white font-medium flex gap-2
     }
 

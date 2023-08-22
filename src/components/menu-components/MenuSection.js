@@ -6,12 +6,13 @@ import 'swiper/css/pagination';
 import {menus} from '../../data/menus'
 import { useState, useEffect } from 'react';
 
-import { Pagination } from 'swiper';
+import { Pagination, Mousewheel } from 'swiper';
 
 
 const MenuSection = () => {
     const [activeMenu, setActiveMenu] = useState(null);
     const [products, setProducts] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         getProductMenu(0, 'burgers')
@@ -19,18 +20,9 @@ const MenuSection = () => {
 
     const getProductMenu = async (index, menuName) => {
         setActiveMenu(index);
+        const targetMenu = menus.find(menu => menu.param === menuName);
 
-        const response = await fetch(`https://tiny-blue-vulture-shoe.cyclic.app/${menuName}?_page=1&_limit=3`);
-        const productsResponse = await response.json();
-        setProducts(productsResponse)
-
-
-        // fetch(`https://tiny-blue-vulture-shoe.cyclic.app/${menuName}?_page=1&_limit=3`)
-        // .then((response) => response.json())
-        // .then((data) => {
-        //     console.log(data)
-        //     // setProducts(data)
-        // });
+        setProducts(targetMenu.products)
     }
 
     return(
@@ -57,7 +49,8 @@ const MenuSection = () => {
                     <div className="menu-food">
                         <Swiper
                             pagination={{ clickable: true }}
-                            modules={[Pagination]}
+                            mousewheel={true}
+                            modules={[Pagination, Mousewheel]}
                             slidesPerView={1}
                             spaceBetween={30}
                             breakpoints={{ 
@@ -71,18 +64,18 @@ const MenuSection = () => {
                             {products.map((product, index) => (
                                 <SwiperSlide key={index}>
                                     <div className='food-list'>
-                                        <LazyLoadImage effect="black-and-white" src={product.img} alt={product.dsc} />
+                                        <LazyLoadImage effect={isLoading ? 'blur' : 'opacity'} className={`food-img`} src={product.img} alt={product.name} onLoad={() => setIsLoading(false)} />
 
                                         <div className='food-text'>
                                             <h6>{product.name}</h6>
                                             <h5><span>$</span>{product.price}</h5>
-                                            <a href='#'  onClick={(e) => {
+                                            <span className='order-btn'  onClick={(e) => {
                                                 e.preventDefault();
                                                 alert('This feature not added yet')
                                             }}>
                                                 Order Now
                                                 <i className="ri-arrow-right-s-line text-xl"></i>
-                                            </a>
+                                            </span>
                                         </div>
                                     </div>
                                 </SwiperSlide>

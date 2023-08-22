@@ -20,12 +20,12 @@ const HeroSection = () => {
                     </p>
 
                     <div className='hero-btn'>
-                        <a href="#" className='hero-get-started-btn' onClick={(e) => {
+                        <span className='hero-get-started-btn' onClick={(e) => {
                             e.preventDefault();
                             alert('This feature not added yet')
                         }}>
                             Get Started
-                        </a>
+                        </span>
 
                         <div className='hero-watch-video-btn' onClick={() => alert('This feature not added yet')}>
                             <div className='play-btn'>
