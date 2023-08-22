@@ -220,7 +220,7 @@ body{
     }
 
     .menu-content .our-menu .menu-food .food-list .food-text .order-btn {
-        @apply text-white font-medium flex gap-2
+        @apply text-white font-medium flex gap-2 cursor-pointer
     }
 
     .menu-content .our-menu .menu-food .food-list::after {
