@@ -1,12 +1,30 @@
 {
   "files": {
-    "main.css": "/food-landing-page/static/css/main.518f551e.css",
-    "main.js": "/food-landing-page/static/js/main.b72c80d2.js",
+    "main.css": "/food-landing-page/static/css/main.73bc7e2c.css",
+    "main.js": "/food-landing-page/static/js/main.68c23d9d.js",
     "static/media/remixicon.svg?t=1590207869815": "/food-landing-page/static/media/remixicon.9cedd2150922ead84869.svg",
     "static/media/remixicon.eot?t=1590207869815": "/food-landing-page/static/media/remixicon.5cb99e6cba5a4619063f.eot",
     "static/media/remixicon.ttf?t=1590207869815": "/food-landing-page/static/media/remixicon.f2616f597cf98f38d234.ttf",
     "static/media/remixicon.woff?t=1590207869815": "/food-landing-page/static/media/remixicon.8d09fa11700ed63cf96e.woff",
     "static/media/remixicon.woff2?t=1590207869815": "/food-landing-page/static/media/remixicon.90668f6f9b3c2c18a090.woff2",
+    "static/media/bbq-chicken-pizza.png": "/food-landing-page/static/media/bbq-chicken-pizza.1ea1511ec12408996e97.png",
+    "static/media/turkey-club-sandwich.png": "/food-landing-page/static/media/turkey-club-sandwich.d5f6de056ad6aca33f41.png",
+    "static/media/sourdough-boule.png": "/food-landing-page/static/media/sourdough-boule.a26d1ab512b4e81f6206.png",
+    "static/media/prime-rib-steak.png": "/food-landing-page/static/media/prime-rib-steak.9baed6619a13d9689870.png",
+    "static/media/rocky-road-ice-cream.png": "/food-landing-page/static/media/rocky-road-ice-cream.2278663a0db666c28697.png",
+    "static/media/ribeye-steak.png": "/food-landing-page/static/media/ribeye-steak.1955b2592f33fde7097d.png",
+    "static/media/vanilla-ice-cream.png": "/food-landing-page/static/media/vanilla-ice-cream.3d067b415507d2933dc5.png",
+    "static/media/reuben-sandiwch.png": "/food-landing-page/static/media/reuben-sandiwch.f08e07764d46b57074fb.png",
+    "static/media/whole-wheat-loaf.png": "/food-landing-page/static/media/whole-wheat-loaf.06005d46de64574598e4.png",
+    "static/media/delux-cheese-burger.png": "/food-landing-page/static/media/delux-cheese-burger.5471303600f293b4667d.png",
+    "static/media/caprese-panini.png": "/food-landing-page/static/media/caprese-panini.705a08046e7d2ec238b4.png",
+    "static/media/strawberry-sorbet.png": "/food-landing-page/static/media/strawberry-sorbet.453457f37f5adf325e50.png",
+    "static/media/french-baguette.png": "/food-landing-page/static/media/french-baguette.eaaae049406ec3e58dec.png",
+    "static/media/margherita-pizza.png": "/food-landing-page/static/media/margherita-pizza.f6e5e4066a2685cfda08.png",
+    "static/media/veggie-avocado-burger.png": "/food-landing-page/static/media/veggie-avocado-burger.a58415e9b1dd14659d33.png",
+    "static/media/sirloin-steak.png": "/food-landing-page/static/media/sirloin-steak.c5e67390055afeef3673.png",
+    "static/media/spicy-chicken-burger.png": "/food-landing-page/static/media/spicy-chicken-burger.b4c560670382ed67ed75.png",
+    "static/media/pepperoni-pizza.png": "/food-landing-page/static/media/pepperoni-pizza.4563bb6470964d0b2753.png",
     "static/media/hero-img.webp": "/food-landing-page/static/media/hero-img.9d7b36c7a142d7661371.webp",
     "static/media/cs-1.svg": "/food-landing-page/static/media/cs-1.85dfbe6b18ab5e50aeea90f699725c58.svg",
     "static/media/hero-pizza.png": "/food-landing-page/static/media/hero-pizza.8f322d5b032e507d9863.png",
@@ -14,11 +32,11 @@
     "static/media/easy-to-order.png": "/food-landing-page/static/media/easy-to-order.6db90db09d51dd64732b.png",
     "static/media/fastest-delivery.png": "/food-landing-page/static/media/fastest-delivery.cb4fb3f9d5ef27e16c0b.png",
     "index.html": "/food-landing-page/index.html",
-    "main.518f551e.css.map": "/food-landing-page/static/css/main.518f551e.css.map",
-    "main.b72c80d2.js.map": "/food-landing-page/static/js/main.b72c80d2.js.map"
+    "main.73bc7e2c.css.map": "/food-landing-page/static/css/main.73bc7e2c.css.map",
+    "main.68c23d9d.js.map": "/food-landing-page/static/js/main.68c23d9d.js.map"
   },
   "entrypoints": [
-    "static/css/main.518f551e.css",
-    "static/js/main.b72c80d2.js"
+    "static/css/main.73bc7e2c.css",
+    "static/js/main.68c23d9d.js"
   ]
 }
