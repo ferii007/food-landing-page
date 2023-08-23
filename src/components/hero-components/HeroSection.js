@@ -8,7 +8,7 @@ import heroPizza from'./../../assets/img/hero-img/hero-pizza.png';
 const HeroSection = () => {
 
     return(
-        <section className="max-width-01 lg:h-screen">
+        <section className="max-width-01 lg:h-screen xl:h-auto">
             <div className="hero-content">
                 <div className="hero-desc">
                     <h1 className="hero-title">
