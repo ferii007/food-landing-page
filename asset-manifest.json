@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/food-landing-page/static/css/main.553217fc.css",
-    "main.js": "/food-landing-page/static/js/main.c01f89b4.js",
+    "main.css": "/food-landing-page/static/css/main.98782c9d.css",
+    "main.js": "/food-landing-page/static/js/main.6d4953cd.js",
     "static/media/remixicon.svg?t=1590207869815": "/food-landing-page/static/media/remixicon.9cedd2150922ead84869.svg",
     "static/media/remixicon.eot?t=1590207869815": "/food-landing-page/static/media/remixicon.5cb99e6cba5a4619063f.eot",
     "static/media/remixicon.ttf?t=1590207869815": "/food-landing-page/static/media/remixicon.f2616f597cf98f38d234.ttf",
@@ -32,11 +32,11 @@
     "static/media/easy-to-order.png": "/food-landing-page/static/media/easy-to-order.6db90db09d51dd64732b.png",
     "static/media/fastest-delivery.png": "/food-landing-page/static/media/fastest-delivery.cb4fb3f9d5ef27e16c0b.png",
     "index.html": "/food-landing-page/index.html",
-    "main.553217fc.css.map": "/food-landing-page/static/css/main.553217fc.css.map",
-    "main.c01f89b4.js.map": "/food-landing-page/static/js/main.c01f89b4.js.map"
+    "main.98782c9d.css.map": "/food-landing-page/static/css/main.98782c9d.css.map",
+    "main.6d4953cd.js.map": "/food-landing-page/static/js/main.6d4953cd.js.map"
   },
   "entrypoints": [
-    "static/css/main.553217fc.css",
-    "static/js/main.c01f89b4.js"
+    "static/css/main.98782c9d.css",
+    "static/js/main.6d4953cd.js"
   ]
 }
